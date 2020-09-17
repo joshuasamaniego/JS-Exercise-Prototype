@@ -140,10 +140,10 @@ Baby.prototype.play = function () {
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window/Global Object Binding: 'console.log'-ing inside of the window, or when an object has global scope, the value of 'this' will be the window/console Object. 
+  2. Implicit Binding: This is the 'left of the dot' binding case. As in, when a function (or object method) is attached to an object, it is 'IMPLIED' that the object now becomes 'this'.
+  3. New Binding: This is for use with a constructor function (which is an object creator essentially), and in the following case, 'this' refers to the specific instance of the object that is created and returned by the constructor function. We also have to make sure to implement the word 'new' before the object we are referring to when using New Binding.
+  4. Explicit Binding: This is when we directly use the .call of .apply method, and we usually use this to override the value of constructor objects. 
 */
 
 ///////// END OF CHALLENGE /////////
